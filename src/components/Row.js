@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import createProps from '../createProps';
 import { ViewportSizeType } from '../types';
 
-const rowKeys = ['start', 'center', 'end', 'top', 'middle', 'bottom', 'around', 'between'];
+const rowKeys = ['vydia-start', 'vydia-center', 'vydia-end', 'vydia-top', 'vydia-middle', 'vydia-bottom', 'vydia-around', 'vydia-between'];
 
 const propTypes = {
   reverse: PropTypes.bool,
@@ -26,7 +26,7 @@ function getRowClassNames(props) {
 
   for (let i = 0; i < rowKeys.length; ++i) {
     const key = rowKeys[i];
-    const value = props[key];
+    const value = props[key.replace('vydia-', '')];
     if (value) {
       modificators.push(getClass(`${key}-${value}`));
     }

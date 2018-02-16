@@ -47,11 +47,11 @@ function getColClassNames(props) {
   }
 
   if (props.first) {
-    extraClasses.push(getClass('first-' + props.first));
+    extraClasses.push(getClass('vydia-first-' + props.first));
   }
 
   if (props.last) {
-    extraClasses.push(getClass('last-' + props.last));
+    extraClasses.push(getClass('vydia-last-' + props.last));
   }
 
   return Object.keys(props)

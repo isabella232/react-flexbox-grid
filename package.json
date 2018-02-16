@@ -23,7 +23,7 @@
     "react-component"
   ],
   "dependencies": {
-    "flexboxgrid2": "github:vydia/flexboxgrid2#a80971c51c62cfb639649f44b2d384cdc7791900",
+    "flexboxgrid2": "github:vydia/flexboxgrid2#5190f19c940585a2197bc0c40804154fe1367af0",
     "prop-types": "^15.5.8"
   },
   "devDependencies": {
