@@ -22,7 +22,7 @@ const propTypes = {
 };
 
 function getRowClassNames(props) {
-  const modificators = [props.className, getClass('row')];
+  const modificators = [props.className, getClass('vydia-row')];
 
   for (let i = 0; i < rowKeys.length; ++i) {
     const key = rowKeys[i];
@@ -33,7 +33,7 @@ function getRowClassNames(props) {
   }
 
   if (props.reverse) {
-    modificators.push(getClass('reverse'));
+    modificators.push(getClass('vydia-reverse'));
   }
 
   return modificators;

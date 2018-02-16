@@ -23,16 +23,16 @@ const propTypes = {
 };
 
 const classMap = {
-  xs: 'col-xs',
-  sm: 'col-sm',
-  md: 'col-md',
-  lg: 'col-lg',
-  xl: 'col-xl',
-  xsOffset: 'col-xs-offset',
-  smOffset: 'col-sm-offset',
-  mdOffset: 'col-md-offset',
-  lgOffset: 'col-lg-offset',
-  xlOffset: 'col-xl-offset'
+  xs: 'vydia-col-xs',
+  sm: 'vydia-col-sm',
+  md: 'vydia-col-md',
+  lg: 'vydia-col-lg',
+  xl: 'vydia-col-xl',
+  xsOffset: 'vydia-col-xs-offset',
+  smOffset: 'vydia-col-sm-offset',
+  mdOffset: 'vydia-col-md-offset',
+  lgOffset: 'vydia-col-lg-offset',
+  xlOffset: 'vydia-col-xl-offset'
 };
 
 function isInteger(value) {
