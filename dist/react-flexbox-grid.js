@@ -125,7 +125,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var rowKeys = ['start', 'center', 'end', 'top', 'middle', 'bottom', 'around', 'between'];
+	var rowKeys = ['vydia-start', 'vydia-center', 'vydia-end', 'vydia-top', 'vydia-middle', 'vydia-bottom', 'vydia-around', 'vydia-between'];
 
 	var propTypes = {
 	  reverse: _propTypes2.default.bool,
@@ -143,18 +143,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 	function getRowClassNames(props) {
-	  var modificators = [props.className, (0, _classNames2.default)('row')];
+	  var modificators = [props.className, (0, _classNames2.default)('vydia-row')];
 
 	  for (var i = 0; i < rowKeys.length; ++i) {
 	    var key = rowKeys[i];
-	    var value = props[key];
+	    var value = props[key.replace('vydia-', '')];
 	    if (value) {
 	      modificators.push((0, _classNames2.default)(key + '-' + value));
 	    }
 	  }
 
 	  if (props.reverse) {
-	    modificators.push((0, _classNames2.default)('reverse'));
+	    modificators.push((0, _classNames2.default)('vydia-reverse'));
 	  }
 
 	  return modificators;
@@ -520,16 +520,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 	var classMap = {
-	  xs: 'col-xs',
-	  sm: 'col-sm',
-	  md: 'col-md',
-	  lg: 'col-lg',
-	  xl: 'col-xl',
-	  xsOffset: 'col-xs-offset',
-	  smOffset: 'col-sm-offset',
-	  mdOffset: 'col-md-offset',
-	  lgOffset: 'col-lg-offset',
-	  xlOffset: 'col-xl-offset'
+	  xs: 'vydia-col-xs',
+	  sm: 'vydia-col-sm',
+	  md: 'vydia-col-md',
+	  lg: 'vydia-col-lg',
+	  xl: 'vydia-col-xl',
+	  xsOffset: 'vydia-col-xs-offset',
+	  smOffset: 'vydia-col-sm-offset',
+	  mdOffset: 'vydia-col-md-offset',
+	  lgOffset: 'vydia-col-lg-offset',
+	  xlOffset: 'vydia-col-xl-offset'
 	};
 
 	function isInteger(value) {
@@ -544,11 +544,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  if (props.first) {
-	    extraClasses.push((0, _classNames2.default)('first-' + props.first));
+	    extraClasses.push((0, _classNames2.default)('vydia-first-' + props.first));
 	  }
 
 	  if (props.last) {
-	    extraClasses.push((0, _classNames2.default)('last-' + props.last));
+	    extraClasses.push((0, _classNames2.default)('vydia-last-' + props.last));
 	  }
 
 	  return Object.keys(props).filter(function (key) {
@@ -608,7 +608,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 	function Grid(props) {
-	  var containerClass = (0, _classNames2.default)(props.fluid ? 'container-fluid' : 'container');
+	  var containerClass = (0, _classNames2.default)(props.fluid ? 'vydia-container-fluid' : 'vydia-container');
 	  var classNames = [props.className, containerClass];
 
 	  return _react2.default.createElement(props.tagName || 'div', (0, _createProps2.default)(propTypes, props, classNames));

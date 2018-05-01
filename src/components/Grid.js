@@ -11,7 +11,7 @@ const propTypes = {
 };
 
 export default function Grid(props) {
-  const containerClass = getClass(props.fluid ? 'container-fluid' : 'container');
+  const containerClass = getClass(props.fluid ? 'vydia-container-fluid' : 'vydia-container');
   const classNames = [props.className, containerClass];
 
   return React.createElement(props.tagName || 'div', createProps(propTypes, props, classNames));
